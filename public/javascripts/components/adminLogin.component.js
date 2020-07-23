@@ -31,7 +31,6 @@ class AdminLogin extends React.Component {
       adminName: this.state.adminName,
       password: this.state.password,
     };
-    console.log(admin);
 
     fetch("/admin/login", {
       method: "post",
