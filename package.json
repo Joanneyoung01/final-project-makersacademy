@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
-    "start:remote": "MONGOLAB_URI='mongodb+srv://admin:1234@cluster0-nuo9r.mongodb.net/test' npm start",
     "test:unit": "jest",
     "start:test": "PORT=3030 MONGODB_URL='mongodb://localhost/re_engage_test' npm start",
     "test:integration": "cypress run",
