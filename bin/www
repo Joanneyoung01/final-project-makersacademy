@@ -21,16 +21,22 @@ app.set('port', port);
 Setup MongoDB connection
 */
 
-if ( process.env.MONGOLAB_URI ) {
+var environment = "testing";
+
+if ( environment === "local" ) {
+  mongoose.connect('mongodb://localhost/re_engage', {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+      });
+} else if ( environment === "testing" ) {
+  mongoose.connect('mongodb://localhost/re_engage_test', {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+      });
+} else { // live environment
   mongoose.connect(process.env.MONGOLAB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true, 
-    // useFindAndModify: false
-  });
-} else {
-  mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/re_engage', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
   });
 }
 
