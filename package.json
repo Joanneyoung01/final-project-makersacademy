@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
+    "test:unit": "jest",
     "start:dev": "PORT=3000 MONGODB_URL='mongodb://localhost/re_engage' npm start ",
     "start:test": "PORT=3030 MONGODB_URL='mongodb://localhost/re_engage_test' npm start ",
     "start:prod": "npm start",
-    "test:unit": "jest",
     "test:integration": "cypress run",
     "test": "npm run test:unit && npm run test:integration"
   },
