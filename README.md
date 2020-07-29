@@ -43,7 +43,7 @@ This tool helps volunteer coordinators for Re-Engage. Re-Engage is a charity tha
 4. Install Node.js dependencies ```npm install```
 5. Install ```mongodb-community@4.2```
 6. Start Mongodb with ```start mongodb-community@4.2```
-7. ```npm start``` to start the server
+7. ```npm run start:dev``` to start the server
 8. Visit http://localhost:3000 to see the website in action!
 
 ### Testing
@@ -151,7 +151,7 @@ So that I can visualise the pairing logistics
 I would like to see a map of the pairs in the table
 ```
 
-[1]: https://travis-ci.org/Joanneyoung01/re-engage-volunteer-portal
+[1]: https://travis-ci.org/Joanneyoung01/re-engage-volunteer-portal.svg?branch=master
 [2]: https://github.com/Tracht/charity-apr2020/wiki/Product-Spec
 
 ### Snapshots of the website
