@@ -38,27 +38,16 @@ class AvailabilityCell extends React.Component {
   changeColor = () => {
     // console.log(event.target.value);
     if (event.target.value === "false") {
-      event.target.style.backgroundColor = "red";
+      event.target.style.backgroundColor = "#db2a38";
     } else if (event.target.value === "true") {
-      event.target.style.backgroundColor = "green";
+      event.target.style.backgroundColor = "#2cdb9b";
     } else {
-      event.target.style.backgroundColor = "orange";
+      event.target.style.backgroundColor = "#f09b41";
     }
   };
   
 
   render() {
-    // if ($("#coloured-cell").data("value") === 'TBD') {
-    //   $('#coloured-cell').addClass('.select-availability.col.custom-select.tbd');
-    // }
-
-    // if ($("#coloured-cell").data("value") === 'True') {
-    //   $('#coloured-cell').addClass('.select-availability.col.custom-select.true');
-    // }
-
-    // if ($("#coloured-cell").data("value") === 'False') {
-    //   $('#coloured-cell').addClass('.select-availability.col.custom-select.false');
-    // }
     return (
 
       <div className="avail-cell">
@@ -70,25 +59,18 @@ class AvailabilityCell extends React.Component {
           onChange={this.updateAvailability}
         >
           <option
-            // add the success to select
-            // onChange={selector.setAttribute("class", "success")}
             value="true"
             selected={this.props.month == "true"}
           >
             True
           </option>
           <option
-            // add danger to select
-            // onChange={this.updateSelectColour("danger")}
             value="false"
             selected={this.props.month == "false"}
           >
             False
           </option>
           <option
-            // add amber to select
-            // onChange={this.updateSelectColour("amber")}
-            // className="amber"
             value="tbd"
             selected={this.props.month == "undecided"}
           >
