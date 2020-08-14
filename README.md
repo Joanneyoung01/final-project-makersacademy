@@ -36,7 +36,7 @@ This tool helps volunteer coordinators for Re-Engage. Re-Engage is a charity tha
 - [Travis](https://travis-ci.org) for continuous integration and build testing.
 - [Heroku](https://www.heroku.com) for deployment. 
 
-### Installation Guide
+### Installation Guide 
 1. Clone or Fork this repo to your local machine
 2. Install Node Version Manager (NVM) and ```nvm install 14.3.0 ```
 3. Navigate into the project repo
