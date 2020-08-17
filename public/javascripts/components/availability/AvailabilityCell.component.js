@@ -11,11 +11,8 @@ class AvailabilityCell extends React.Component {
   }
 
   updateAvailability = (event) => {
-    // console.log(event.target.value);
     console.log(event.target);
     this.changeColor()
-    // console.log(this.props.driver_id);
-    // console.log(this.props.monthName);
 
     let updateMember = {
       driver_id: this.props.driver_id,
@@ -36,7 +33,6 @@ class AvailabilityCell extends React.Component {
   };
 
   changeColor = () => {
-    // console.log(event.target.value);
     if (event.target.value === "false") {
       event.target.style.backgroundColor = "#db2a38";
     } else if (event.target.value === "true") {
