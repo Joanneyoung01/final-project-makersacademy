@@ -15,7 +15,6 @@ function MemberList(props) {
             <div className="name col">Telephone</div>
             <div className="name col-1"></div>
           </div>
-          
         </div>
 
         {props.members.map((member, index) => (

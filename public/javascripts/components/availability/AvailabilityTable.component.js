@@ -8,7 +8,6 @@ class MemberAvailabilityTable extends React.Component {
   }
 
   componentDidMount() {
-    // console.log(this.props);
     fetch(`/availability/availability?role=${this.props.role}`)
       .then((response) => {
         return response.json();
@@ -22,7 +21,7 @@ class MemberAvailabilityTable extends React.Component {
   }
 
   render() {
-    var string = this.props.role.substring(1); //uest or river
+    var string = this.props.role.substring(1); //guest or river
     var firstLetter = this.props.role.charAt(0).toUpperCase(); // G or D
     var newString = firstLetter + string + "s"; //  Guest or Driver
     return (
