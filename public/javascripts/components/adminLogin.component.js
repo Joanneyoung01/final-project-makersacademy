@@ -57,38 +57,9 @@ class AdminLogin extends React.Component {
   };
 
   render() {
-    if (this.state.loggedIn === false) {
+    if (!this.state.loggedIn) {
       return (
         <div className="container col">
-          {/* <form id="admin-login-form row" className="login" onSubmit={this.login}>
-              <div className="logo">
-              <p className="text-center"><img className="container-fluid col-4" src="../../images/logo.svg"></img></p>
-              </div>
-              <div className="row">
-                <label>AdminName:</label>
-                <input
-                  id="admin"
-                  type="text"
-                  placeholder="Admin"
-                  required
-                  onChange={this.handleChangeName}
-                  value={this.state.adminName}>
-                </input>
-              </div>
-              <div className="row">
-                <label>Password:</label>
-                <input
-                  id="password"
-                  type="password"
-                  placeholder="Password"
-                  required
-                  onChange={this.handleChangePassword}
-                  value={this.state.password}
-                ></input>
-                <input type="submit" value="login" id="login"></input>
-              </div>
-            </form> */}
-
               <div className="wrap-login100">
                 <div className="login100-form-title login-background">
                   <span className="login100-form-title-1">

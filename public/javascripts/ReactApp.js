@@ -57,7 +57,7 @@ class ReactApp extends React.Component {
 
   render() {
     console.log(this.state)
-    if (this.state.loggedIn === false) {
+    if (!this.state.loggedIn) {
       return (
         <form action="admin/login">
           {window.location.replace("admin/login")}
@@ -84,17 +84,17 @@ class ReactApp extends React.Component {
              </section>
               
               {(() => {
-                if (this.state.home === true) {
+                if (this.state.home) {
                   return (
                   <AvailabilityTables />
                 );
               }
 
-              if (this.state.pairs === true) {
+              if (this.state.pairs) {
                 return <Pairing />;
               }
 
-              if (this.state.contact === true) {
+              if (this.state.contact) {
                   return (
                     <Contact />
                   );
