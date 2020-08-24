@@ -1,5 +1,5 @@
 function MemberList(props) {
-  var string = props.role.substring(1); //uest or river
+  var string = props.role.substring(1); //guest or river
   var firstLetter = props.role.charAt(0).toUpperCase(); // G or D
   var newString = firstLetter + string + "s"; //  Guest or Driver
   console.log(newString)
